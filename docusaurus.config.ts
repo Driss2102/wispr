@@ -60,8 +60,10 @@ const config: Config = {
           // noindex, and blog tag archives are thin aggregations we noindex.
           ignorePatterns: ['/search/', '/blog/tags/**', '/blog/archive/', '/blog/authors/**', '/page/**'],
         },
-        // GA4: add the real Measurement ID at go-live (see HANDOFF.md), e.g.
-        // gtag: { trackingID: 'G-XXXXXXXXXX', anonymizeIP: true },
+        gtag: {
+          trackingID: 'G-L03M564D1Z',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
