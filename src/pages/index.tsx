@@ -63,8 +63,7 @@ function HeroSection(): React.ReactElement {
           </div>
           <p className="hero__note">Free plan, no credit card. Works on Mac, Windows, iPhone and Android.</p>
           <p className="hero__by">
-            By Driss Lahbil, software engineer.
-            <span className="hero__badge">Independent, not affiliated with Wispr AI</span>
+            <span className="hero__badge">Independent guide, not owned by Wispr AI</span>
             <span className="hero__badge hero__badge--soft">Facts verified Sep 2026</span>
           </p>
         </div>
