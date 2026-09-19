@@ -150,6 +150,8 @@ const config: Config = {
         ],
       }),
     },
+    { tagName: 'link', attributes: { rel: 'icon', href: '/favicon.ico', sizes: 'any' } },
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', href: '/img/apple-touch-icon.png' } },
     { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
     { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' } },
     {
