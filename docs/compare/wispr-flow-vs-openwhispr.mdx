@@ -1,0 +1,80 @@
+---
+title: Wispr Flow vs OpenWhispr (2026), paid app vs open-source
+description: Wispr Flow vs OpenWhispr compared. OpenWhispr is an open-source, privacy-first dictation app with local and cloud models and Linux support; Wispr Flow is polished and paid.
+sidebar_label: vs OpenWhispr
+keywords: [wispr flow vs openwhispr, openwhispr vs wispr flow, openwhispr alternative, open source dictation, whisper flow open source]
+last_update:
+  date: 2026-09-14
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, ComparisonTable, VerdictBox, FAQAccordion } from '@site/src/components';
+
+# Wispr Flow vs OpenWhispr
+
+<DisclosureNotice />
+
+**OpenWhispr is an open-source, privacy-first dictation app that aims for a Wispr-Flow-style experience while letting you keep processing local. It runs local models (Whisper, Nvidia Parakeet) or optional cloud, works on Linux, and adds an Agent Mode for AI post-processing. Wispr Flow is the paid, more polished commercial app with stronger out-of-the-box cleanup and mobile apps. Choose OpenWhispr for open-source privacy and Linux; choose Wispr Flow for polish and mobile.**
+
+Note the naming: OpenWhispr uses "Whispr" like Wispr Flow, but they are different products. This is an honest, two-sided comparison. If Wispr Flow is your pick, read the [review](/docs/review/).
+
+## At a glance
+
+<ComparisonTable
+  competitorName="OpenWhispr"
+  rows={[
+    { feature: 'Cost', product: 'Free plan + paid Pro', competitor: 'Free and open source (optional Pro for cloud)' },
+    { feature: 'Processing', product: 'Cloud by default', competitor: 'Local by default, optional cloud (BYOK)' },
+    { feature: 'Platforms', product: 'Mac, Windows, iPhone, Android', competitor: 'Mac, Windows, Linux (mobile on Pro)' },
+    { feature: 'AI post-processing', product: 'Auto-cleanup and tone', competitor: 'Agent Mode with custom AI prompts' },
+    { feature: 'Setup', product: 'Install and go', competitor: 'More technical; choose and run models' },
+    { feature: 'Best for', product: 'Polish, mobile, hands-off', competitor: 'Open-source privacy, Linux, tinkering' },
+  ]}
+/>
+
+OpenWhispr's feature and pricing details are from its own project pages; confirm current specifics there.
+
+## Where OpenWhispr wins
+
+- **Open-source and privacy-first.** Local models keep your voice on your machine; optional cloud is bring-your-own-key.
+- **Linux support** and cross-platform parity.
+- **Agent Mode.** Custom AI system prompts to post-process your dictation, which is flexible if you like to tinker.
+- **Free** for local use, with an optional cheap Pro for cloud and mobile.
+
+## Where Wispr Flow wins
+
+- **Polish out of the box.** Strong cleanup and tone with no configuration.
+- **Mobile.** Native iPhone and Android apps.
+- **No model management.** You do not choose or run models.
+
+## Which should you pick?
+
+If you want an open-source, private, Linux-friendly tool and do not mind some setup, OpenWhispr is a strong, flexible option, especially with its local-or-cloud choice. If you want the most polished, zero-config experience with first-class mobile apps, Wispr Flow is smoother, at a price.
+
+<VerdictBox
+  title="Our take"
+  verdict="OpenWhispr is the pick for open-source privacy, Linux, and flexibility, with an optional cloud upgrade. Wispr Flow is the pick for polish and mobile with no setup. Different priorities, both valid."
+  pros={[
+    'OpenWhispr: open-source, local privacy, Linux, Agent Mode',
+    'Wispr Flow: polished cleanup, native mobile apps, zero setup',
+  ]}
+  cons={[
+    'OpenWhispr: more setup, mobile behind Pro',
+    'Wispr Flow: paid for unlimited, cloud by default, no Linux',
+  ]}
+  ctaText="Try Wispr Flow free"
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Is OpenWhispr the same as Wispr Flow?', a: 'No. Despite the similar "Whispr" naming, OpenWhispr is a separate open-source project. Wispr Flow is a commercial app by Wispr AI.' },
+    { q: 'Is OpenWhispr free?', a: 'Yes, the core is free and open source with local models. It offers an optional low-cost Pro for unlimited cloud transcription and mobile.' },
+    { q: 'Does OpenWhispr work on Linux?', a: 'Yes, it is cross-platform including Linux. Wispr Flow has no Linux app.' },
+  ]}
+/>
+
+---
+
+_Related: [vs Handy](/docs/compare/wispr-flow-vs-handy/) · [vs OpenAI Whisper](/docs/compare/wispr-flow-vs-openai-whisper/) · [on Linux](/docs/use/linux/)_

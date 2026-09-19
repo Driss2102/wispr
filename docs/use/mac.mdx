@@ -1,0 +1,57 @@
+---
+title: How to use Wispr Flow on Mac
+description: "How to install and use Wispr Flow on macOS: permissions, the dictation hotkey, and how to fix the common setup snags. A step-by-step guide."
+sidebar_label: On Mac
+keywords: [wispr flow mac, wispr flow macos, dictation mac, voice typing mac]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# How to use Wispr Flow on Mac
+
+<DisclosureNotice />
+
+**To use Wispr Flow on Mac, download the macOS app, grant it Microphone and Accessibility permissions, then hold your dictation hotkey in any text field and speak. The Accessibility permission is the step people miss: without it, Wispr Flow can hear you but cannot type into other apps.**
+
+## Install and set up (step by step)
+
+1. Download the Mac app from the [official Wispr Flow site](https://wisprflow.ai/) and open the installer.
+2. Launch Wispr Flow. On first run macOS will ask for **Microphone** access. Allow it.
+3. Grant **Accessibility** access when prompted (System Settings > Privacy & Security > Accessibility). This lets Wispr Flow insert text into other apps.
+4. Note your dictation hotkey shown in the app, and try it in a note or your browser's address bar.
+
+## Dictating on macOS
+
+Put your cursor where you want text, hold the hotkey, and talk normally. You can pause and ramble; Wispr Flow removes filler words and adds punctuation. Release the key and the cleaned-up text appears. It works system-wide, so the same flow applies in Mail, Safari, Slack, and your editor.
+
+## Common Mac snags and fixes
+
+- **Text is not appearing in other apps.** Accessibility permission is off or was reset by a macOS update. Re-enable it in System Settings.
+- **Wrong microphone.** Set your preferred input in the app and in System Settings > Sound.
+- **Nothing happens on the hotkey.** Another app may have claimed the same shortcut; change the hotkey in Wispr Flow.
+
+See the full [microphone troubleshooting guide](/docs/guides/fix-microphone/) if audio is the problem.
+
+<PricingCTA
+  title="Try Wispr Flow on your Mac"
+  subtitle="The free plan is enough to test dictation across your Mac apps, with no credit card."
+  location="use-mac-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Is Wispr Flow free on Mac?', a: 'Yes, the free plan works on macOS with a weekly word cap (2,000 words a week as of 2026). Pro removes the cap.' },
+    { q: 'Does Wispr Flow work in every Mac app?', a: 'It works in almost any app with a text field, because it types where your cursor is. That requires the Accessibility permission.' },
+    { q: 'Wispr Flow vs Apple Dictation on Mac?', a: 'Apple Dictation is free and built in but less accurate on rambling speech and does less cleanup. See our Wispr Flow vs Apple Dictation comparison.' },
+  ]}
+/>
+
+---
+
+_Related: [Wispr Flow on Windows](/docs/use/windows/) · [in Cursor and VS Code](/docs/use/cursor/) · [Wispr Flow review](/docs/review/)_

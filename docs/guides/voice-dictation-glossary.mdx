@@ -1,0 +1,65 @@
+---
+title: Voice dictation glossary, key terms explained
+description: A plain-English glossary of voice dictation and speech-to-text terms, ASR, WER, on-device vs cloud, VAD, diarization, latency, and more, defined simply.
+sidebar_label: Dictation glossary
+keywords: [voice dictation glossary, speech to text terms, what is ASR, what is WER, dictation terminology]
+last_update:
+  date: 2026-09-14
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, FAQAccordion } from '@site/src/components';
+
+# Voice dictation glossary
+
+<DisclosureNotice />
+
+**This glossary defines the terms you will meet when comparing dictation apps, in plain English. Knowing a handful of them, ASR, WER, on-device versus cloud, and latency, makes it much easier to read reviews and pick the right tool. Each definition is short and practical, not academic.**
+
+## Core terms
+
+**ASR (Automatic Speech Recognition).** The technology that turns spoken audio into text. Every dictation app is built on some ASR system, whether its own model or an open one.
+
+**Speech-to-text (STT).** Another name for the same thing: converting speech into written text.
+
+**Dictation.** Live speech-to-text as you talk, typed into an app. Different from transcription, which usually means converting a recorded file after the fact.
+
+**Transcription.** Turning recorded audio or video into text, after the fact. Tools like [MacWhisper](/docs/compare/wispr-flow-vs-macwhisper/) do this; dictation apps like Wispr Flow do live typing.
+
+## Accuracy and quality
+
+**WER (Word Error Rate).** A common accuracy measure: the percentage of words a system gets wrong. Lower is better. Benchmarks vary hugely by audio quality, accent, and vocabulary, so treat any single WER number with caution.
+
+**Diarization.** Identifying who spoke which words (speaker separation). It matters for meeting transcription, less so for personal dictation.
+
+**VAD (Voice Activity Detection).** Detecting when you are actually speaking versus silence or noise, so the app knows when to transcribe.
+
+## Where processing happens
+
+**On-device (local).** The audio is converted to text on your own machine, so your voice never leaves it. Best for privacy; see [cloud vs on-device dictation](/blog/cloud-vs-on-device-dictation/).
+
+**Cloud.** The audio is sent to a server for processing. This is how most polished apps work by default, including Wispr Flow. It enables strong accuracy without local hardware.
+
+**BYOK (bring your own key).** Some tools let you plug in your own API key for a cloud model, so you control and pay for the processing directly.
+
+## Experience
+
+**Latency.** The delay between speaking and seeing text. Lower latency feels more responsive.
+
+**Custom dictionary.** A personal list of words (names, jargon) you teach the app to spell correctly. See the [custom dictionary guide](/docs/guides/custom-dictionary/).
+
+**Command Mode.** Editing or formatting text with spoken commands rather than dictating new words. See [Command Mode](/docs/guides/command-mode/).
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'What does ASR mean?', a: 'Automatic Speech Recognition: the technology that converts spoken audio into text. It is the engine inside every dictation app.' },
+    { q: 'What is a good Word Error Rate (WER)?', a: 'Lower is better, but there is no single "good" number: WER depends heavily on audio quality, accent, and vocabulary, so compare benchmarks only within the same test conditions.' },
+    { q: 'What is the difference between on-device and cloud dictation?', a: 'On-device processes your voice locally so it never leaves your machine (better for privacy); cloud sends audio to a server (often better accuracy and features). See our post on the trade-off.' },
+  ]}
+/>
+
+---
+
+_Related: [voice typing explained](/docs/guides/voice-typing-explained/) · [cloud vs on-device](/blog/cloud-vs-on-device-dictation/) · [accuracy](/docs/review/wispr-flow-accuracy/)_

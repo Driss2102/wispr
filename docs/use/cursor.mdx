@@ -1,0 +1,53 @@
+---
+title: Use Wispr Flow in Cursor and VS Code
+description: How developers use Wispr Flow in Cursor and VS Code to dictate prompts, comments, commit messages and docs, and where dictating code still falls short.
+sidebar_label: In Cursor & VS Code
+keywords: [wispr flow cursor, wispr flow vs code, dictate code, voice coding, ai coding dictation]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# Use Wispr Flow in Cursor and VS Code
+
+<DisclosureNotice />
+
+**Wispr Flow works in Cursor and VS Code with no extension: click into the editor, the AI chat pane, or the terminal, hold your hotkey, and speak. It shines for dictating AI prompts, comments, commit messages, and prose. It is weaker for typing exact code syntax, which is still faster on a keyboard.**
+
+## Where it helps developers most
+
+- **AI prompts in Cursor.** Speaking a full, contextual request to the agent beats typing a terse one.
+- **Comments and docstrings.** Explaining intent in plain language is quick by voice.
+- **Commit messages and PR descriptions.** These are prose, so dictation is a good fit.
+- **Chat and issues.** Slack, GitHub, and Linear fields all accept dictated text.
+
+## Where it does not
+
+Dictating literal syntax (brackets, camelCase, operators, indentation) is slower and error-prone. The realistic workflow is hybrid: dictate the natural-language parts and type the code. Our [dictate code guide](/docs/guides/dictate-code/) goes deeper, including a [custom dictionary](/docs/guides/custom-dictionary/) for library and function names.
+
+## Setup
+
+Install Wispr Flow on [Mac](/docs/use/mac/) or [Windows](/docs/use/windows/), open Cursor or VS Code, place your cursor in any field, and use your dictation hotkey. On Mac, make sure Accessibility permission is granted so it can type into the editor.
+
+<PricingCTA
+  title="Try dictation in your editor"
+  subtitle="Start on the free plan and see where voice fits your coding workflow. No credit card."
+  location="use-cursor-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Can Wispr Flow write code from my voice?', a: 'It can dictate natural language well, but exact code syntax is still faster typed. Use it for prompts, comments, and docs, and pair it with an AI assistant for the code itself.' },
+    { q: 'Do I need a Cursor or VS Code extension?', a: 'No. Wispr Flow types into the editor like any other app.' },
+    { q: 'Does it work in the integrated terminal?', a: 'Yes, it types wherever the cursor is, including the terminal, though shell commands are usually better typed.' },
+  ]}
+/>
+
+---
+
+_Related: [dictate code](/docs/guides/dictate-code/) · [Wispr Flow for developers](/docs/for/developers/) · [in ChatGPT](/docs/use/chatgpt/)_

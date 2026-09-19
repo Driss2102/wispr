@@ -1,0 +1,69 @@
+---
+title: Wispr Flow vs OpenAI Whisper (2026), app vs model
+description: Wispr Flow vs OpenAI Whisper explained. One is a finished dictation app, the other is an open-source speech model. Why they are not really competitors.
+sidebar_label: vs OpenAI Whisper
+keywords: [wispr flow vs openai whisper, whisper vs wispr flow, openai whisper dictation, whisper flow]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, ComparisonTable, VerdictBox, FAQAccordion } from '@site/src/components';
+
+# Wispr Flow vs OpenAI Whisper
+
+<DisclosureNotice />
+
+**This is the comparison behind the "Whisper Flow" confusion. Wispr Flow is a finished dictation app you install and use. OpenAI Whisper is an open-source speech-recognition model that developers build tools on. Comparing them is like comparing a car to an engine. If you want to dictate today, you want an app like Wispr Flow. If you are a developer building your own tool, Whisper is a building block.**
+
+This is an honest, two-sided comparison. If Wispr Flow is what you actually want, read the [review](/docs/review/), or see [Whisper Flow vs Wispr Flow](/docs/guides/whisper-flow-vs-wispr-flow/) for the naming.
+
+## At a glance
+
+<ComparisonTable
+  competitorName="OpenAI Whisper"
+  rows={[
+    { feature: 'What it is', product: 'A finished dictation app', competitor: 'An open-source speech-to-text model' },
+    { feature: 'Who it is for', product: 'Anyone who wants to dictate', competitor: 'Developers and tinkerers' },
+    { feature: 'Setup', product: 'Install and go', competitor: 'You build or configure a tool around it' },
+    { feature: 'Cleanup and UX', product: 'Filler removal, punctuation, tone, hotkeys', competitor: 'Raw transcription; UX is up to you' },
+    { feature: 'Cost', product: 'Free plan + paid Pro', competitor: 'Free and open source (you provide compute)' },
+    { feature: 'Runs on Linux', product: 'No native app', competitor: 'Yes, if you set it up' },
+  ]}
+/>
+
+## Why people confuse them
+
+The names sound alike ("Whisper" vs "Wispr Flow"), and many dictation tools, including some alternatives, use the Whisper model under the hood. But Whisper by itself is not an app you dictate with, and it is a different product from a different company than Wispr Flow.
+
+## Which should you use?
+
+- **Want to dictate now, no setup:** Wispr Flow (or another finished app).
+- **Building a custom or offline dictation tool, especially on Linux:** Whisper as a component.
+
+<VerdictBox
+  title="Our take"
+  verdict="These are not real competitors. Use Wispr Flow if you want a ready dictation app. Use OpenAI Whisper if you are a developer assembling your own speech-to-text tool."
+  pros={[
+    'Wispr Flow: finished app, cleanup, hotkeys, cross-platform',
+    'OpenAI Whisper: free, open source, runs anywhere including Linux',
+  ]}
+  cons={[
+    'Wispr Flow: no Linux app, cloud by default',
+    'OpenAI Whisper: not an app, requires technical setup',
+  ]}
+  ctaText="Try Wispr Flow free"
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Is Wispr Flow built on OpenAI Whisper?', a: 'No. Wispr AI says Wispr Flow is not just a Whisper wrapper, and the company predates Whisper\'s 2022 release. The broader point stands: Wispr Flow is a finished app, while Whisper is a model that other tools build on.' },
+    { q: 'Is "Whisper Flow" the same as OpenAI Whisper?', a: 'No. "Whisper Flow" is a misspelling of the app Wispr Flow. OpenAI Whisper is a separate speech model. See our disambiguation guide.' },
+  ]}
+/>
+
+---
+
+_Related: [Whisper Flow vs Wispr Flow](/docs/guides/whisper-flow-vs-wispr-flow/) · [on Linux](/docs/use/linux/) · [all alternatives](/docs/compare/)_

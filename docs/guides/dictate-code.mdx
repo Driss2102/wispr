@@ -1,0 +1,60 @@
+---
+title: How to dictate code with your voice (realistically)
+description: A realistic guide to dictating code with Wispr Flow. What works (prompts, comments, docs), what does not (exact syntax), and the hybrid workflow developers use.
+sidebar_label: How to dictate code
+keywords: [dictate code, voice coding, wispr flow code, voice typing programming]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# How to dictate code with your voice
+
+<DisclosureNotice />
+
+**Dictating literal code, brackets, camelCase, operators, and indentation, is slower and more error-prone than typing it, and no dictation app fully solves that. What does work is dictating the natural-language parts of coding: AI prompts, comments, docstrings, commit messages, and issues. The realistic workflow is hybrid: talk for prose, type for syntax, and let an AI assistant turn your spoken intent into code.**
+
+## What voice is good for in coding
+
+- **Prompts to AI assistants** in Cursor, Claude, or ChatGPT. This is the biggest win: describe the change out loud in detail.
+- **Comments and docstrings.** Explaining intent is faster spoken.
+- **Commit messages and PR descriptions.** Pure prose.
+- **Issues, tickets, and Slack.** Everyday developer writing.
+
+## What voice is bad for
+
+- **Exact syntax.** Dictating `for (let i = 0; i < n; i++)` is painful.
+- **Precise names.** Function and variable names get mangled unless you add them to a dictionary.
+- **Refactors that need cursor precision.** The keyboard wins.
+
+## The hybrid workflow
+
+1. Put your cursor in the AI chat pane (for example in [Cursor or VS Code](/docs/use/cursor/)).
+2. Dictate a full, contextual prompt describing what you want.
+3. Let the assistant generate the code; you type the small precise edits.
+4. Dictate the commit message and PR description.
+
+Add your stack's terms (library names, APIs, product names) to a [custom dictionary](/docs/guides/custom-dictionary/) so they stop getting mistranscribed.
+
+<PricingCTA
+  title="Try the hybrid workflow"
+  subtitle="Dictate your prompts and prose, type your syntax. Start on the free plan, no credit card."
+  location="dictate-code-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Can Wispr Flow write code from speech?', a: 'It can dictate natural language accurately, but exact code syntax is still faster typed. Pair dictation with an AI coding assistant: speak the intent, let the AI write the code.' },
+    { q: 'How do I stop it mistyping function names?', a: 'Add them to your custom dictionary so Wispr Flow spells them the way your codebase does.' },
+    { q: 'Is voice coding actually faster?', a: 'For prompts, comments, and docs, yes. For typing precise syntax, no. Use it where it wins.' },
+  ]}
+/>
+
+---
+
+_Related: [in Cursor and VS Code](/docs/use/cursor/) · [for developers](/docs/for/developers/) · [custom dictionary](/docs/guides/custom-dictionary/)_

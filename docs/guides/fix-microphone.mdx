@@ -1,0 +1,52 @@
+---
+title: Fix Wispr Flow microphone problems
+description: Wispr Flow not hearing you or not typing? A checklist to fix microphone, permission, and hotkey problems on Mac and Windows, from the most common cause down.
+sidebar_label: Fix microphone issues
+keywords: [wispr flow microphone not working, wispr flow not typing, wispr flow permissions, dictation not working]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, FAQAccordion } from '@site/src/components';
+
+# Fix Wispr Flow microphone problems
+
+<DisclosureNotice />
+
+**Most Wispr Flow "not working" problems are one of three things: a missing permission (microphone, or Accessibility on Mac), the wrong input device selected, or a hotkey conflict. Work down this checklist from the most common cause and you will usually fix it in a minute.**
+
+## 1. Permissions (the most common cause)
+
+- **Mac:** grant both **Microphone** and **Accessibility** (System Settings > Privacy & Security). Accessibility is what lets Wispr Flow type into other apps; a macOS update can silently reset it.
+- **Windows:** allow microphone access under Settings > Privacy & security > Microphone.
+
+## 2. Wrong microphone selected
+
+If Wispr Flow hears nothing, the wrong input is likely selected. Set your preferred mic both in Wispr Flow and in your OS sound settings. If you use a headset, confirm it is the active device.
+
+## 3. Hotkey conflict
+
+If pressing the hotkey does nothing, another app may have claimed the same shortcut. Change the dictation hotkey inside Wispr Flow.
+
+## 4. It hears me but types nothing
+
+That is the Accessibility permission on Mac, or the target window not having focus on Windows. Re-grant Accessibility, and click into the field before dictating.
+
+## 5. Poor accuracy, not silence
+
+If it hears you but the text is wrong, that is a different problem: background noise or unfamiliar words. Reduce noise and build a [custom dictionary](/docs/guides/custom-dictionary/).
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Why is Wispr Flow not typing into my app?', a: 'On Mac, the Accessibility permission is off or was reset by an update. Re-enable it in System Settings > Privacy & Security > Accessibility.' },
+    { q: 'Why can Wispr Flow not hear me?', a: 'Usually the wrong input device is selected or microphone permission is off. Set the correct mic in both the app and your OS settings.' },
+    { q: 'The hotkey does nothing. What now?', a: 'Another app likely uses the same shortcut. Change the Wispr Flow dictation hotkey.' },
+  ]}
+/>
+
+---
+
+_Related: [on Mac](/docs/use/mac/) · [on Windows](/docs/use/windows/) · [custom dictionary](/docs/guides/custom-dictionary/)_

@@ -1,0 +1,71 @@
+---
+title: Wispr Flow vs MacWhisper (2026), dictation vs transcription
+description: Wispr Flow vs MacWhisper compared. Live system-wide dictation versus offline transcription of audio files on Mac. They do different jobs, here is which you need.
+sidebar_label: vs MacWhisper
+keywords: [wispr flow vs macwhisper, macwhisper alternative, mac transcription vs dictation]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, ComparisonTable, VerdictBox, FAQAccordion } from '@site/src/components';
+
+# Wispr Flow vs MacWhisper
+
+<DisclosureNotice />
+
+**MacWhisper is a Mac app that runs OpenAI's Whisper model locally to transcribe audio and video files, often offline. Wispr Flow is live, system-wide dictation that types as you speak into any app. If you need to transcribe recordings on a Mac, MacWhisper is the right tool. If you want to write faster by talking, that is Wispr Flow.**
+
+This is an honest, two-sided comparison. If Wispr Flow is your pick, read the [review](/docs/review/).
+
+## At a glance
+
+<ComparisonTable
+  competitorName="MacWhisper"
+  rows={[
+    { feature: 'Main job', product: 'Live dictation into any app', competitor: 'Transcribe existing audio/video files' },
+    { feature: 'Timing', product: 'Real time as you speak', competitor: 'After the fact, from a file' },
+    { feature: 'Processing', product: 'Cloud by default', competitor: 'Local, often offline (Whisper model)' },
+    { feature: 'Platforms', product: 'Mac, Windows, iPhone, Android', competitor: 'Mac' },
+    { feature: 'Best for', product: 'Writing by voice', competitor: 'Transcribing recordings, offline privacy' },
+  ]}
+/>
+
+## Choose Wispr Flow if...
+
+You want to type by voice in real time across your apps. MacWhisper does not do live system-wide dictation the way Wispr Flow does.
+
+## Choose MacWhisper if...
+
+You have recordings (interviews, meetings, voice memos) to turn into text, and you want local, offline processing on a Mac.
+
+## Can they overlap?
+
+A little: both turn speech into text. But live dictation and file transcription are different workflows, so many people would use Wispr Flow for writing and a Whisper-based tool for transcribing recordings.
+
+<VerdictBox
+  title="Our take"
+  verdict="Different tools for different jobs. Wispr Flow for live, cross-app dictation; MacWhisper for local, offline transcription of audio files on a Mac."
+  pros={[
+    'Wispr Flow: real-time dictation everywhere',
+    'MacWhisper: local/offline file transcription',
+  ]}
+  cons={[
+    'Wispr Flow: not built for transcribing files, cloud by default',
+    'MacWhisper: not live dictation, Mac only',
+  ]}
+  ctaText="Try Wispr Flow free"
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Can MacWhisper do live dictation?', a: 'Its focus is transcribing audio and video files with a local Whisper model. For live, system-wide dictation, Wispr Flow is the fit.' },
+    { q: 'Is MacWhisper offline?', a: 'It can run Whisper locally, which is a privacy advantage over cloud dictation. Wispr Flow processes in the cloud by default.' },
+  ]}
+/>
+
+---
+
+_Related: [vs OpenAI Whisper](/docs/compare/wispr-flow-vs-openai-whisper/) · [on Linux](/docs/use/linux/) · [all alternatives](/docs/compare/)_

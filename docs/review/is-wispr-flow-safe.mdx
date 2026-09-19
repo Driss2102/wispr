@@ -1,0 +1,59 @@
+---
+title: Is Wispr Flow safe and private?
+description: How Wispr Flow handles your voice data, why cloud processing matters, what teams get for compliance, and how to decide if it fits your privacy needs.
+sidebar_label: Privacy & safety
+keywords: [is wispr flow safe, wispr flow privacy, wispr flow security, wispr flow data, wispr flow hipaa]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# Is Wispr Flow safe and private?
+
+<DisclosureNotice />
+
+**Wispr Flow processes your speech in the cloud by default, which is fine for most everyday writing but is the key thing to understand before using it for sensitive material. Teams that need compliance can look at the Growth plan, which adds org-wide HIPAA enforcement and admin controls. If you require strictly on-device processing, verify the current options on Wispr Flow's site, or consider an on-device alternative.**
+
+We do not have privileged access to Wispr Flow's internal data practices, so treat the specifics below as pointers to verify on their site, not as guarantees.
+
+## What "cloud by default" means
+
+To turn your speech into clean text, Wispr Flow sends audio to be processed. For routine writing (emails, notes, messages) this is normal and comparable to other cloud tools. The consideration is the same as with any cloud service: do not dictate secrets you would not paste into a cloud app.
+
+## For sensitive or regulated work
+
+- **Teams:** the Growth plan adds org-wide HIPAA enforcement, SSO/SAML, and admin controls over model training. If you are in a regulated field, evaluate this tier and read the current terms.
+- **Model training:** enterprise tiers mention locked model training and admin controls; confirm the current defaults for your plan.
+
+## If you need on-device only
+
+If your hard requirement is that audio never leaves your machine, cloud-default dictation is not the right fit. Look at [Superwhisper](/docs/compare/wispr-flow-vs-superwhisper/) with on-device model options, or a [Whisper-based](/docs/compare/wispr-flow-vs-openai-whisper/) local tool.
+
+## How to decide
+
+1. Is what you dictate sensitive? If not, the default is fine.
+2. Are you a team with compliance needs? Look at Growth or Enterprise.
+3. Do you need strict on-device processing? Consider an alternative.
+
+<PricingCTA
+  title="Try it for everyday writing"
+  subtitle="For routine writing, the free plan is a low-risk way to test Wispr Flow. No credit card."
+  location="safety-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Does Wispr Flow process my voice in the cloud?', a: 'By default, yes. That is fine for everyday writing, but worth knowing before dictating sensitive material. Verify current on-device options on their site.' },
+    { q: 'Is Wispr Flow HIPAA compliant?', a: 'Team tiers (Growth) mention org-wide HIPAA enforcement. If you need compliance, evaluate that plan and confirm the current terms.' },
+    { q: 'What if I need on-device only?', a: 'Cloud-default dictation is not the fit. Consider Superwhisper or a local Whisper-based tool.' },
+  ]}
+/>
+
+---
+
+_Related: [full review](/docs/review/) · [vs Superwhisper](/docs/compare/wispr-flow-vs-superwhisper/) · [pricing](/docs/review/wispr-flow-pricing/)_

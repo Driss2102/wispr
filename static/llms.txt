@@ -1,0 +1,48 @@
+# Wispr Flow Guide
+
+> Wispr Flow Guide is an independent review-and-setup guide for Wispr Flow, the AI voice dictation app made by Wispr AI, Inc. It is not affiliated with Wispr AI, Inc. Content is independent and may contain affiliate links. Wispr Flow is often searched as "Whisper Flow" (a misspelling, and a confusion with OpenAI's Whisper model); this site covers the app, Wispr Flow.
+
+Wispr Flow Guide helps people set up Wispr Flow on their devices and apps, decide whether it is worth paying for, understand the free plan and pricing, judge its accuracy and privacy, and compare it with alternatives. Facts are checked against Wispr Flow's own product information and dated sources.
+
+## Start here
+- [What is Wispr Flow?](https://wisprflowguide.com/docs/what-is-wispr-flow/): Plain-English explainer of the dictation app, whether it is free, and which devices it runs on.
+- [Download Wispr Flow](https://wisprflowguide.com/docs/download-wispr-flow/): Where to get it safely on Mac, Windows, iPhone, and Android.
+- [Wispr Flow login](https://wisprflowguide.com/docs/wispr-flow-login/): How sign-in works and how to fix login issues.
+- [Wispr Flow review (2026)](https://wisprflowguide.com/docs/review/): Independent review with rating, pros and cons, and who it is for.
+- [Is Wispr Flow worth it?](https://wisprflowguide.com/docs/review/is-wispr-flow-worth-it/): When Wispr Flow is worth paying for and when the free plan or built-in dictation is enough.
+- [Wispr Flow benefits](https://wisprflowguide.com/docs/review/wispr-flow-benefits/): What you actually gain, and who benefits most.
+- [Who uses Wispr Flow?](https://wisprflowguide.com/docs/for/who-uses-wispr-flow/): Solopreneurs, developers, writers, and more.
+- [Wispr AI, the company](https://wisprflowguide.com/docs/wispr-flow-company/): Founders, funding, and the $2B valuation behind Wispr Flow.
+- [Whisper Flow vs Wispr Flow](https://wisprflowguide.com/docs/guides/whisper-flow-vs-wispr-flow/): The name confusion explained (the app vs OpenAI's Whisper model).
+
+## Pricing and plans
+- [Wispr Flow pricing](https://wisprflowguide.com/docs/review/wispr-flow-pricing/): Free plan plus paid Pro, Growth, and Enterprise, described qualitatively (links to Wispr Flow for current prices).
+- [Wispr Flow free plan](https://wisprflowguide.com/docs/review/wispr-flow-free-plan/): the honest 2026 answer, including the weekly word cap.
+- [Is Wispr Flow Pro worth it?](https://wisprflowguide.com/docs/review/wispr-flow-pro/): what the paid plan unlocks.
+
+## Setup guides (per app and platform)
+- [Wispr Flow on Mac](https://wisprflowguide.com/docs/use/mac/)
+- [Wispr Flow on Windows](https://wisprflowguide.com/docs/use/windows/)
+- [Wispr Flow on iPhone](https://wisprflowguide.com/docs/use/iphone/)
+- [Wispr Flow on Android](https://wisprflowguide.com/docs/use/android/)
+- [Wispr Flow in ChatGPT](https://wisprflowguide.com/docs/use/chatgpt/)
+- [Wispr Flow in Cursor and VS Code](https://wisprflowguide.com/docs/use/cursor/)
+- [Wispr Flow on Linux (what to do)](https://wisprflowguide.com/docs/use/linux/)
+
+## Comparisons (Wispr Flow alternatives)
+- [Wispr Flow alternatives overview](https://wisprflowguide.com/docs/compare/)
+- [Wispr Flow vs Superwhisper](https://wisprflowguide.com/docs/compare/wispr-flow-vs-superwhisper/)
+- [Wispr Flow vs Typeless](https://wisprflowguide.com/docs/compare/wispr-flow-vs-typeless/)
+- [Wispr Flow vs Otter.ai](https://wisprflowguide.com/docs/compare/wispr-flow-vs-otter/)
+- [Wispr Flow vs Apple Dictation](https://wisprflowguide.com/docs/compare/wispr-flow-vs-apple-dictation/)
+- [Wispr Flow vs OpenAI Whisper](https://wisprflowguide.com/docs/compare/wispr-flow-vs-openai-whisper/)
+
+## How-to guides
+- [How to use Wispr Flow](https://wisprflowguide.com/docs/guides/how-to-use-wispr-flow/)
+- [How to dictate code with your voice](https://wisprflowguide.com/docs/guides/dictate-code/)
+- [Set up a custom dictionary](https://wisprflowguide.com/docs/guides/custom-dictionary/)
+- [Fix Wispr Flow microphone issues](https://wisprflowguide.com/docs/guides/fix-microphone/)
+
+## More
+- [Blog](https://wisprflowguide.com/blog): practical tips on voice dictation and productivity.
+- [Affiliate disclosure](https://wisprflowguide.com/legal/affiliate-disclosure/)

@@ -1,0 +1,63 @@
+---
+title: Wispr Flow accuracy, how good is it really?
+description: How accurate Wispr Flow is in real use, where it excels, where it slips (noise, accents, jargon), and how to get cleaner results with a custom dictionary.
+sidebar_label: Accuracy
+keywords: [wispr flow accuracy, is wispr flow accurate, wispr flow accents, dictation accuracy]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# Wispr Flow accuracy
+
+<DisclosureNotice />
+
+**On clear speech in a reasonably quiet room, Wispr Flow is highly accurate, and its automatic cleanup is what sets it apart: it turns a raw transcript into text you can send. Accuracy drops with heavy background noise, strong or less-common accents, and specialized jargon, though a custom dictionary closes much of the jargon gap. It is accurate enough for daily writing; it is not flawless.**
+
+## Where accuracy is strong
+
+- **Clear speech, quiet room:** very accurate, with good punctuation.
+- **Natural, rambling speech:** handled well; the cleanup removes filler and false starts.
+- **Common vocabulary:** rarely an issue.
+
+## Where it slips
+
+- **Background noise:** a busy cafe or open office lowers accuracy. A closer microphone helps.
+- **Accents:** it handles many well, but stronger or less-common accents can see more errors. This is true of all dictation, not just Wispr Flow.
+- **Jargon, names, acronyms:** the words a general model has never seen. Fix these with a [custom dictionary](/docs/guides/custom-dictionary/).
+
+## How to get cleaner results
+
+1. Reduce noise and use a headset mic close to your mouth.
+2. Speak in full, steady sentences; do not trail off.
+3. Add your most-corrected terms to the custom dictionary.
+4. Type the precise bits (exact figures, code); dictate the prose.
+
+See the full [dictation tips](/docs/guides/dictation-tips/) guide for more.
+
+## A fair expectation
+
+Expect to lightly review dictated text before sending, especially anything with names or numbers. That is normal for all dictation. What Wispr Flow does well is make that review quick rather than a rewrite.
+
+<PricingCTA
+  title="Judge the accuracy yourself"
+  subtitle="The free plan is enough to test accuracy on your own voice and vocabulary. No credit card."
+  location="accuracy-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Is Wispr Flow accurate?', a: 'On clear speech, yes, and the cleanup makes output usable. Accuracy drops with noise, strong accents, and unfamiliar jargon.' },
+    { q: 'Does Wispr Flow handle accents?', a: 'It handles many accents well, but stronger or less-common ones can produce more errors, as with any dictation tool.' },
+    { q: 'How do I improve accuracy on names and jargon?', a: 'Add them to the custom dictionary. It targets exactly the words general models get wrong.' },
+  ]}
+/>
+
+---
+
+_Related: [custom dictionary](/docs/guides/custom-dictionary/) · [dictation tips](/docs/guides/dictation-tips/) · [full review](/docs/review/)_

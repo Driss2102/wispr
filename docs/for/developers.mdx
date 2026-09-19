@@ -1,0 +1,56 @@
+---
+title: Wispr Flow for developers
+description: How developers actually use Wispr Flow, dictating AI prompts, comments, commits, and docs, and where it does not help (exact code syntax). An honest take.
+sidebar_label: For developers
+keywords: [wispr flow for developers, voice coding, dictate prompts, wispr flow programming]
+last_update:
+  date: 2026-09-13
+  author: Driss Lahbil
+---
+
+import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+
+# Wispr Flow for developers
+
+<DisclosureNotice />
+
+**For developers, Wispr Flow is best thought of as a fast way to produce the natural-language parts of coding: prompts to AI assistants, comments, commit messages, PR descriptions, and issues. It will not type clean syntax for you, so the winning pattern is hybrid: dictate intent, let an AI write the code, type the precise edits.**
+
+## Where it earns its place
+
+- **AI prompts in [Cursor and VS Code](/docs/use/cursor/).** Speaking a detailed, contextual prompt beats typing a terse one, and better prompts get better code.
+- **Comments and docstrings.** Explaining intent is faster out loud.
+- **Commit messages, PRs, issues, Slack.** All prose, all faster spoken.
+
+## Where it does not help
+
+Dictating literal syntax (brackets, camelCase, operators) is slower than typing. Do not fight it there. See the realistic workflow in [how to dictate code](/docs/guides/dictate-code/).
+
+## Make it accurate for your stack
+
+Add your libraries, APIs, and product names to a [custom dictionary](/docs/guides/custom-dictionary/) so they stop getting mistranscribed. This is the single biggest accuracy win for developers.
+
+## RSI angle
+
+Many developers come to dictation because of wrist strain. Offloading prose to your voice meaningfully cuts keystrokes. See [Wispr Flow for RSI](/docs/for/rsi/).
+
+<PricingCTA
+  title="Try the dictate-intent, type-syntax workflow"
+  subtitle="Start on the free plan and use voice for prompts and prose. No credit card."
+  location="for-developers-cta"
+  riskReversal
+/>
+
+## Frequently asked questions
+
+<FAQAccordion
+  items={[
+    { q: 'Can Wispr Flow write code for me?', a: 'It dictates natural language well; exact syntax is faster typed. Pair it with an AI assistant: speak the intent, let the AI write the code.' },
+    { q: 'Does it work in my editor?', a: 'Yes, it types into Cursor, VS Code, the terminal, and any text field, no extension needed.' },
+    { q: 'How do I stop mistyped function names?', a: 'Add them to your custom dictionary.' },
+  ]}
+/>
+
+---
+
+_Related: [in Cursor and VS Code](/docs/use/cursor/) · [dictate code](/docs/guides/dictate-code/) · [for RSI](/docs/for/rsi/)_
