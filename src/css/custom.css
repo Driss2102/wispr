@@ -1186,3 +1186,43 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 }
 @keyframes heroUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 @keyframes hd-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+/* ===================== Alternatives directory table (/compare pillar) ===== */
+.alt-table-wrap {
+  overflow-x: auto; margin: 1.75rem 0; border: 1px solid var(--kg-border); border-radius: 1rem;
+}
+.alt-table { width: 100%; border-collapse: collapse; min-width: 720px; font-size: 0.95rem; }
+.alt-table thead th {
+  text-align: left; font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 600;
+  font-size: 0.82rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ifm-color-emphasis-700);
+  background: var(--kg-surface-alt); padding: 0.85rem 1.1rem; border-bottom: 1px solid var(--kg-border);
+}
+.alt-table tbody th, .alt-table tbody td {
+  padding: 0.95rem 1.1rem; border-bottom: 1px solid var(--kg-border); vertical-align: middle; text-align: left;
+}
+.alt-table tbody tr:last-child th, .alt-table tbody tr:last-child td { border-bottom: none; }
+.alt-table tbody tr { transition: background 0.15s ease; }
+.alt-table tbody tr:hover { background: color-mix(in srgb, var(--ifm-color-primary) 5%, transparent); }
+.alt-table__name {
+  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 700; font-size: 1.02rem;
+  color: var(--ifm-font-color-base); white-space: nowrap;
+}
+.alt-table td { color: var(--ifm-color-emphasis-800); }
+.alt-table__tradeoff { color: var(--ifm-color-emphasis-600); }
+.alt-table__cta { white-space: nowrap; }
+
+.alt-guide-btn {
+  display: inline-flex; align-items: center; gap: 0.15rem;
+  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 600; font-size: 0.9rem;
+  padding: 0.45rem 0.95rem; border-radius: 999px; text-decoration: none !important;
+  color: var(--ifm-color-primary); background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 35%, var(--kg-border));
+  transition: background 0.16s ease, color 0.16s ease, transform 0.16s ease, border-color 0.16s ease;
+}
+.alt-guide-btn:hover {
+  background: var(--ifm-color-primary); color: #fff; border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+}
+[data-theme='dark'] .alt-guide-btn:hover { color: #14141c; }
+.alt-guide-btn span[aria-hidden] { transition: transform 0.2s cubic-bezier(0.22,1,0.36,1); }
+.alt-guide-btn:hover span[aria-hidden] { transform: translateX(3px); }
