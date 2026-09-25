@@ -1,0 +1,61 @@
+---
+title: "Vibe coding with your voice in Cursor and VS Code"
+description: You cannot dictate code syntax, but you can talk your way through vibe coding in Cursor or VS Code by dictating detailed prompts to the AI. Here is how.
+slug: vibe-coding-with-voice-cursor
+authors: [driss]
+tags: [developers, dictation, ai-tools]
+date: 2026-09-20
+last_update:
+  date: 2026-09-22
+  author: Driss Lahbil
+keywords: [vibe coding voice, dictate cursor, voice coding vs code, wispr flow cursor]
+---
+
+"Vibe coding" means building software by describing what you want to an AI assistant and steering the result, rather than typing every line. That workflow is a natural fit for voice, because the bottleneck is no longer syntax, it is how clearly and quickly you can describe intent. Here is how to vibe code with your voice in Cursor or VS Code, and where the keyboard still wins.
+
+{/* truncate */}
+
+## Why voice fits vibe coding
+
+In traditional coding, dictation is miserable because you are speaking brackets and operators. In vibe coding, you are not writing syntax at all; you are writing prompts. Prompts are prose, and prose is exactly what dictation is good at. Talking a full, contextual request is faster than typing it, and the extra detail you naturally add out loud tends to produce better code from the assistant. We break down the wider split in [how I actually dictate code](/blog/how-i-dictate-code/).
+
+## The workflow in Cursor or VS Code
+
+1. **Put your cursor in the AI chat or inline prompt.** This is where voice does its work. See the setup in [use Wispr Flow in Cursor](/docs/use/cursor/) or [in your browser](/docs/use/browser/) for web-based assistants.
+2. **Dictate the change in detail.** Do not say "add auth." Say the paragraph: which file, which function, what behavior, what to leave untouched, and how errors should be handled.
+3. **Let the assistant write the code.** Read the diff.
+4. **Type the small corrections.** Fix names, tweak a line, adjust a value. The keyboard wins for precise edits.
+5. **Dictate the commit message and PR description.** Pure prose, and the part most people rush.
+
+## A concrete example
+
+Instead of typing a terse "add retry to fetch," say it fully: "In the API client, wrap the fetch call in a retry with exponential backoff, cap it at three attempts, log each failure with the attempt number, and keep the existing error type unchanged." That level of detail is tedious to type and easy to speak, and the generated code needs far less fixing. Multiply that across a day and your hands do a fraction of the work.
+
+## The one setup step that matters
+
+Add your stack's names to a [custom dictionary](/docs/guides/custom-dictionary/): libraries, APIs, your product, your teammates. Otherwise the assistant's prompt is full of misheard names and you spend the saved time re-correcting. This single step is what separates developers who stick with voice from those who quit after a day. More detail in the [dictate code guide](/docs/guides/dictate-code/).
+
+## Where the keyboard still wins
+
+- **Exact syntax and one-character edits.** Always faster typed.
+- **Precise values, config, and regex.** Dictating these is error-prone.
+- **Silent offices.** Talking through prompts is not always socially fine; see [dictation in open offices](/blog/dictation-in-open-offices/).
+
+## The honest bottom line
+
+Voice will not let you dictate code, and anyone promising that is overselling it. What it does do is make the prompting, explaining, and writing around the code dramatically faster, which is most of what vibe coding actually is. If typing also hurts your wrists, it is a real relief on top of the speed; see [Wispr Flow for developers](/docs/for/developers/) and [for RSI](/docs/for/rsi/).
+
+To try this workflow, our independent [Wispr Flow review](/docs/review/) covers where it helps and where it does not, and the [free plan](/docs/review/wispr-flow-free-plan/) is enough to test a week of voice-driven prompting at no cost.
+
+## FAQ
+
+**Can you actually code with your voice in Cursor?**
+Not the syntax. You dictate detailed prompts to the AI assistant and type the small corrections. Since vibe coding is mostly prompting, voice fits it well.
+
+**What is the best voice setup for Cursor or VS Code?**
+Dictate into the AI chat or inline prompt, build a custom dictionary of your stack's names, and keep the keyboard for exact edits.
+
+**Is voice coding faster than typing?**
+For the prompts, comments, and commit messages, yes. For the literal code, no. The gain comes from the prose around the code, which is most of the words you produce.
+
+_Last reviewed: 22 September 2026._

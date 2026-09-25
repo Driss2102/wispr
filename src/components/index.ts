@@ -3,6 +3,8 @@ export { default as ComparisonTable } from './ComparisonTable';
 export { default as AlternativesTable } from './AlternativesTable';
 export { default as FAQAccordion } from './FAQAccordion';
 export { default as PricingCTA } from './PricingCTA';
+export { default as OfferBanner } from './OfferBanner';
 export { default as ReviewSchema } from './ReviewSchema';
+export { default as HowToSchema } from './HowToSchema';
 export { default as VerdictBox } from './VerdictBox';
 export { default as DisclosureNotice } from './DisclosureNotice';

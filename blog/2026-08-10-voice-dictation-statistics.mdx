@@ -1,35 +1,57 @@
 ---
 title: "Voice dictation statistics (2026): speed, accuracy, adoption"
-description: A sourced roundup of voice dictation statistics, how fast speech is versus typing, what research shows on accuracy, and what vendors claim. With citations.
+description: A sourced roundup of voice dictation statistics, how fast speech is versus typing, what research shows on accuracy, and what vendors claim, with citations.
 slug: voice-dictation-statistics
 authors: [driss]
 tags: [dictation, productivity]
 date: 2026-08-10
+last_update:
+  date: 2026-09-22
+  author: Driss Lahbil
 keywords: [voice dictation statistics, is speech faster than typing, dictation speed stats]
 ---
 
-How much faster is talking than typing, really? Here is a sourced roundup of what research and vendors say about dictation speed, accuracy, and adoption. Where a number is a company's own claim, we label it as such, and where it comes from research, we cite it.
+How much faster is talking than typing, really? Here is a sourced roundup of what research and vendors say about dictation speed, accuracy, and adoption. Every research number below traces to a named, dated study, and every vendor number is labeled as a company claim. If you cite one figure from this page, make it one with a study behind it.
 
 {/* truncate */}
 
 ## Speed: speaking vs typing
 
-- **Typing:** average typing speed is commonly cited at around 40 words per minute for most people, with skilled typists faster. Treat this as a general benchmark rather than a precise figure, since it varies widely by person and keyboard.
-- **Speaking:** conversational speech is typically around 120 to 150 words per minute, far above average typing.
-- **Research:** a 2016 study by Ruan and colleagues (Stanford University, University of Washington, and Baidu Research) found that speech input on a smartphone was roughly three times faster than typing on the same device, and with a lower error rate after correction. This remains one of the most cited controlled comparisons of speech versus keyboard input.
+- **Average typing speed is about 52 words per minute.** The largest typing study to date measured 168,000 volunteers and 136 million keystrokes and found a mean of 51.56 wpm, with individual averages ranging from 4 to 158 wpm (Dhakal et al., CHI 2018).
+- **Speech entry was about 3x faster than the keyboard on phones.** In a controlled Stanford-led study, English speech input ran at 153 wpm versus 52 wpm for the keyboard, a 2.93x speed-up (Ruan et al., 2016).
+- **The gap held in a second language.** Mandarin speech input was 2.87x faster than the keyboard (123 vs 43 wpm) in the same study (Ruan et al., 2016).
+- **Conversational speech is roughly 120 to 150 wpm.** This is a widely used general benchmark rather than a single study, and it varies by speaker and language.
 
-Source: Ruan et al., "Speech Is 3x Faster than Typing for English and Mandarin Text Entry on Mobile Devices" (2016).
+The direction is consistent: for prose, speaking is meaningfully faster than typing. The exact multiple depends on you, your device, and your environment.
 
 ## Accuracy
 
-Modern speech recognition on clear audio is strong, but published accuracy figures depend heavily on the test conditions (noise, accent, vocabulary). Rather than cite a single headline "accuracy percent" that does not generalize, the honest summary is: accuracy is high on clear speech and common vocabulary, and drops with noise, strong accents, and jargon. That pattern is consistent across tools, including [Wispr Flow](/docs/review/wispr-flow-accuracy/).
+- **Speech had a lower error rate than the keyboard, not just a higher speed.** In the Stanford-led study, the English error rate was 20.4% lower with speech, and the Mandarin error rate 63.4% lower, than typing on the phone keyboard after correction (Ruan et al., 2016).
+- **The test used a strong recognizer.** Those results came from Baidu's Deep Speech 2 against the built-in iOS QWERTY and Pinyin keyboards (Ruan et al., 2016), so treat them as speech recognition at its best, not every app on every device.
+- **Real-world accuracy depends on conditions.** Published accuracy figures swing widely with noise, accent, and vocabulary. The honest summary: accuracy is high on clear speech and common words, and drops with noise, strong accents, and jargon. That pattern holds across tools, including [Wispr Flow](/docs/review/wispr-flow-accuracy/).
 
 ## Vendor claims (labeled as claims)
 
-- **Wispr Flow** states its dictation is about 4x faster than typing, citing roughly 220 words per minute versus 45. This is the company's own marketing claim, not an independent measurement, and it is in the same direction as the research above.
+- **Wispr Flow states its dictation is about 4x faster than typing,** citing roughly 220 words per minute versus 45. This is the company's own marketing claim, not an independent measurement, though it points in the same direction as the research above. See the [review](/docs/review/) and [accuracy](/docs/review/wispr-flow-accuracy/) pages.
+- **Typeless advertises a larger free tier** than most rivals. That is a positioning claim from the vendor; verify current limits on their site. See our [Wispr Flow vs Typeless](/docs/compare/wispr-flow-vs-typeless/) comparison.
+
+Vendor multiples are useful as direction, not proof. A "4x faster" headline compares a fast dictation scenario against slow typing; your own gain depends on your tasks, which is why we recommend testing on real work.
+
+## How to read dictation statistics
+
+- **Separate research from marketing.** A peer-reviewed study with a named method carries more weight than a number on a pricing page. This page labels which is which.
+- **Watch the device.** Most speed research is on phones, where thumb typing is slow and speech wins big. On a full keyboard the gap narrows.
+- **Watch the task.** Every speed figure here is for prose. None of it applies to code, exact data, or heavy formatting, where typing still wins. See [voice typing vs typing](/blog/voice-typing-vs-typing/).
+- **Be wary of "search volume" claims.** Trend indices are relative, not absolute counts, so treat any "X million searches" figure skeptically unless it names a source.
 
 ## What to take from this
 
-The direction is well supported: for most people and most prose, speaking is meaningfully faster than typing. The exact multiple depends on you, your device, and your environment. The practical implication is to use voice for prose and drafts, where the speed gap is real, and the keyboard for precise edits, where it is not. See [voice typing vs typing](/blog/voice-typing-vs-typing/) for how that plays out day to day.
+The evidence for the core claim is solid: for most people and most prose, speaking is faster than typing, and good speech recognition can also be more accurate on mobile. The exact numbers depend on your device, your environment, and what you are writing. The practical implication is to use voice for prose and drafts, where the speed gap is real, and the keyboard for precise edits, where it is not. For how that plays out day to day, see [voice typing vs typing](/blog/voice-typing-vs-typing/), and to try a modern AI dictation app on the [free plan](/docs/review/wispr-flow-free-plan/), read the honest [Wispr Flow review](/docs/review/) first.
 
-_If you spot a stat here that is out of date or mis-cited, email lahbilidriss@gmail.com and I will correct it._
+## Sources
+
+- Dhakal, Feit, Kristensson, Oulasvirta. "Observations on Typing from 136 Million Keystrokes." CHI 2018.
+- Ruan, Wobbrock, Liou, Ng, Landay. "Speech Is 3x Faster than Typing for English and Mandarin Text Entry on Mobile Devices." 2016 (arXiv:1608.07323).
+- Wispr Flow speed figures: Wispr Flow marketing, labeled as company claims.
+
+_If you spot a stat here that is out of date or mis-cited, email lahbilidriss@gmail.com and I will correct it. Last reviewed: 22 September 2026._

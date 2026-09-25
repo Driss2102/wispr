@@ -107,6 +107,8 @@ Last full verification: **2026-09-13**.
 | OpenWhispr | Open-source Whisper-based dictation (rising query) | ASSUMPTION (verify before a full page) | Google Trends rising 2026-09-13 |
 | OpenAI Whisper | The open-source ASR MODEL (not an app) — the source of the "whisper flow" confusion | VERIFIED | 2026-09-13 |
 | Apple Dictation / Windows Voice Typing / Google Voice Typing | Free built-in OS dictation | VERIFIED | common knowledge / OS docs 2026-09-13 |
+| VoiceInk | macOS-only, open-source (GPLv3) on-device dictation built on whisper.cpp; one-time/lifetime purchase (no subscription); privacy-first, offline; personal dictionary | VERIFIED | tryvoiceink.com, getvoibe/voicetypingtools reviews, GitHub 2026-09-22 | position as the Mac, local, subscription-free, open-source pick; Mac-only, less hands-off |
+| Speechify | Broad voice suite: text-to-speech (reads content aloud) + voice typing/dictation + AI assistant; cross-platform; 60+ languages; 55M+ users; subscription | VERIFIED | speechify.com, Microsoft Store 2026-09-22 | position as a reading-first suite that also dictates; Wispr is specialized dictation and does NOT read text aloud |
 
 ## Keyword / demand signals (USER-PROVIDED Google Trends, 12/09/2025–12/09/2026)
 
@@ -114,6 +116,16 @@ Last full verification: **2026-09-13**.
 - Trend: rising from index 25 (Sep 2025) to a 100 peak (May 2026), holding ~70 (Sep 2026).
 - **The moat:** massive "Whisper Flow" (misspelling of Wispr Flow, confused with OpenAI Whisper) demand. Capture with a disambiguation page + consistent "also searched as Whisper Flow" framing.
 - Geo: English-dominant (US, UK, Canada, Australia, NZ, India, Singapore, Israel). France ~20. → English site.
+
+## Voice/typing research statistics (for the stats page) — VERIFIED via named studies, 2026-09-22
+
+| Fact | Value | Verdict | Source (dated) | Approved wording |
+|---|---|---|---|---|
+| Average typing speed | Mean 51.56 wpm (SD 20.20), range 4–158 wpm, 168,000 volunteers, 136M keystrokes | VERIFIED | Dhakal, Feit, Kristensson, Oulasvirta, "Observations on Typing from 136 Million Keystrokes," CHI 2018 | "the largest typing study, 168,000 people, found an average of about 52 words per minute" |
+| Speech vs typing speed (mobile) | English speech 153 wpm vs keyboard 52 wpm; 2.93x faster (English), 2.87x (Mandarin) | VERIFIED | Ruan et al., "Speech Is 3x Faster than Typing…," Stanford/UW/Baidu, 2016 (arXiv:1608.07323) | "speech entry was about 3x faster than the keyboard (153 vs 52 wpm) in a 2016 Stanford-led study" |
+| Speech vs typing error rate | English error rate 20.4% lower, Mandarin 63.4% lower, with speech | VERIFIED | Ruan et al. 2016 | "and with a lower error rate after correction (20.4% lower for English)" |
+| Study system | Baidu Deep Speech 2 vs built-in iOS QWERTY/Pinyin keyboards | VERIFIED | Ruan et al. 2016 | context only |
+| Conversational speech rate | Commonly ~120–150 wpm (general benchmark, varies) | INFERRED (general) | widely cited range; not a single study | "conversational speech is typically around 120 to 150 wpm; treat as a general benchmark" |
 
 ## Site facts
 

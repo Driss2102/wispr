@@ -5,32 +5,58 @@ slug: how-i-dictate-code
 authors: [driss]
 tags: [developers, dictation, ai-tools]
 date: 2026-07-28
+last_update:
+  date: 2026-09-22
+  author: Driss Lahbil
 keywords: [dictate code, voice coding workflow, developer dictation, wispr flow code]
 ---
 
-Every few months someone posts that they now "code with their voice", and every developer who has tried it winces. Dictating literal syntax is miserable. But there is a version of voice-driven coding that genuinely works, and I use it daily. Here is the honest split.
+Every few months someone posts that they now "code with their voice," and every developer who has tried it winces. Dictating literal syntax is miserable. But there is a version of voice-driven coding that genuinely works, and I use it daily. Here is the honest split, and why it holds up.
 
 {/* truncate */}
 
 ## What I dictate
 
-- **AI prompts.** This is the big one. Talking a full, contextual request to an assistant in my editor beats typing a terse one, and the code I get back is better for it.
-- **Comments and docstrings.** Explaining intent out loud is faster than typing it.
-- **Commit messages and PR descriptions.** Pure prose.
-- **Slack, issues, and docs.** All the writing around the code.
+- **AI prompts.** This is the big one. Talking a full, contextual request to an assistant in my editor beats typing a terse one, and the code I get back is better for it. Voice makes me over-explain, and over-explaining is exactly what these tools need.
+- **Comments and docstrings.** Explaining intent out loud is faster than typing it, and it reads more naturally.
+- **Commit messages and PR descriptions.** Pure prose, and the part of the job I used to rush. Dictating them makes them better.
+- **Slack, issues, and docs.** All the writing around the code, which is most of the words a developer produces in a day.
 
 ## What I still type
 
-- **Syntax.** Brackets, operators, indentation. Dictating these is slower and error-prone.
+- **Syntax.** Brackets, operators, indentation. Dictating these is slower and error-prone, and no tool has fixed that.
 - **Exact names.** Unless they are in my dictionary, function and variable names get mangled.
-- **Small precise edits.** The keyboard wins for one-character fixes.
+- **Small precise edits.** The keyboard wins for one-character fixes; re-dictating a line to change one token is absurd.
+
+The rule of thumb: if it is prose, I speak it; if it is code, I type it. The surprise is how much of a developer's day is actually prose.
 
 ## The workflow
 
 I keep the AI chat pane focused, dictate the change I want in detail, let the assistant write the code, then type the small corrections. The commit message gets dictated too. My hands do far less, and the parts they do are the parts that need precision.
 
+A concrete example: instead of typing "add retry logic to the fetch," I say a paragraph. "In the client, wrap the fetch call in a retry with exponential backoff, cap it at three attempts, log each failure with the attempt number, and leave the existing error type unchanged." That level of detail is tedious to type and easy to speak, and the generated code needs far less fixing as a result.
+
+This is why editor integrations matter. Dictating straight into [Cursor](/docs/use/cursor/) or a [browser](/docs/use/browser/)-based assistant keeps the whole loop in one place.
+
 ## The one setup step that matters
 
-Add your stack's names to a custom dictionary: libraries, APIs, your product. It stops the constant re-correcting that otherwise kills the whole thing. I wrote up the details in the [dictate code guide](/docs/guides/dictate-code/) and the [custom dictionary guide](/docs/guides/custom-dictionary/).
+Add your stack's names to a custom dictionary: libraries, APIs, your product, your teammates. It stops the constant re-correcting that otherwise kills the whole thing. I wrote up the details in the [dictate code guide](/docs/guides/dictate-code/) and the [custom dictionary guide](/docs/guides/custom-dictionary/). Skipping this step is the single most common reason developers try voice for a day and quit.
 
-If you want the tool I use for this, it is Wispr Flow; the honest [review](/docs/review/) covers where it does and does not help.
+## Why it is worth the trouble
+
+The honest payoff is not "coding at the speed of speech." It is doing all the writing around the code faster, and cutting keyboard time when your wrists need a break. If typing hurts, this workflow is a real relief and not just a speed play; see [Wispr Flow for RSI](/docs/for/rsi/) and [for developers](/docs/for/developers/).
+
+If you want the tool I use for this, it is Wispr Flow; the honest [review](/docs/review/) covers where it does and does not help, and there is a [free plan](/docs/review/wispr-flow-free-plan/) to test the workflow at no cost.
+
+## FAQ
+
+**Can you really code with your voice?**
+Not the literal syntax, no. What works is dictating prose: AI prompts, comments, commit messages, and docs, while typing the actual code. Most of a developer's words are prose, so the gain is real.
+
+**What is the best dictation setup for developers?**
+Dictate into your editor or AI assistant, type syntax, and build a custom dictionary of your stack's names. That one setup step removes most of the frustration.
+
+**Does dictation help with wrist strain from coding?**
+Yes. Moving prose to voice cuts total keystrokes meaningfully, which helps if typing is painful. It is one of the strongest reasons developers stick with it.
+
+_Last reviewed: 22 September 2026._

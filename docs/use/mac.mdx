@@ -8,11 +8,13 @@ last_update:
   author: Driss Lahbil
 ---
 
-import { DisclosureNotice, PricingCTA, FAQAccordion } from '@site/src/components';
+import { DisclosureNotice, PricingCTA, FAQAccordion, HowToSchema } from '@site/src/components';
 
 # How to use Wispr Flow on Mac
 
 <DisclosureNotice />
+
+<HowToSchema name="Dictate in Mac with Wispr Flow" appName="Mac" />
 
 **To use Wispr Flow on Mac, download the macOS app, grant it Microphone and Accessibility permissions, then hold your dictation hotkey in any text field and speak. The Accessibility permission is the step people miss: without it, Wispr Flow can hear you but cannot type into other apps.**
 
@@ -35,12 +37,7 @@ Put your cursor where you want text, hold the hotkey, and talk normally. You can
 
 See the full [microphone troubleshooting guide](/docs/guides/fix-microphone/) if audio is the problem.
 
-<PricingCTA
-  title="Try Wispr Flow on your Mac"
-  subtitle="The free plan is enough to test dictation across your Mac apps, with no credit card."
-  location="use-mac-cta"
-  riskReversal
-/>
+<OfferBanner location="use-mac" />
 
 ## Frequently asked questions
 

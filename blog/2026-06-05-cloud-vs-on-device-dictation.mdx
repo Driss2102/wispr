@@ -5,10 +5,13 @@ slug: cloud-vs-on-device-dictation
 authors: [driss]
 tags: [dictation, ai-tools]
 date: 2026-06-05
+last_update:
+  date: 2026-09-22
+  author: Driss Lahbil
 keywords: [cloud vs on device dictation, dictation privacy, on device dictation, private dictation]
 ---
 
-When you dictate, your voice has to be turned into text somewhere. Where that happens, in the cloud or on your own device, is the single biggest privacy question in dictation, and it quietly separates the popular apps from the privacy-focused ones. Here is what actually matters.
+When you dictate, your voice has to be turned into text somewhere. Where that happens, in the cloud or on your own device, is the single biggest privacy question in dictation, and it quietly separates the popular apps from the privacy-focused ones. Here is what actually matters, and how to decide without overthinking it.
 
 {/* truncate */}
 
@@ -17,18 +20,52 @@ When you dictate, your voice has to be turned into text somewhere. Where that ha
 - **Cloud processing.** Your audio is sent to a server, converted to text, and returned. This is how most polished apps work, including [Wispr Flow](/docs/review/) by default. It enables strong accuracy and features without heavy local hardware.
 - **On-device processing.** The audio never leaves your machine; a local model does the work. This is the privacy-first approach used by open-source tools like [Handy](/docs/compare/wispr-flow-vs-handy/) and [OpenWhispr](/docs/compare/wispr-flow-vs-openwhispr/), and available in apps like [Superwhisper](/docs/compare/wispr-flow-vs-superwhisper/).
 
+Neither is "safe" or "unsafe" on its own. Cloud tools can be run responsibly by serious companies, and local tools can still leak text through whatever app you paste into. What changes is where the raw audio goes, and who could, in theory, access it.
+
+## What actually leaves your device
+
+With a cloud tool, the thing that travels is a short audio clip of what you just said, plus the text it becomes. Reputable vendors encrypt that traffic and delete audio quickly, but you are trusting their word and their security. With an on-device tool, the audio stays local, so there is simply less to trust and less to leak.
+
+The text itself is a separate question. Once dictation types into Gmail, Slack, or a doc, your words live in that app under that app's privacy terms, no matter how they got there. Dictation privacy is really about the audio and the transcription step, not the final destination.
+
 ## When the difference matters
 
-- **It usually does not** for everyday writing: emails, notes, chat. Cloud dictation is comparable to any other cloud tool you already use.
-- **It matters a lot** for sensitive material: legal, medical, financial, or confidential business content. If audio of that leaving your device is a problem, you want on-device processing.
-- **It matters for regulation.** Fields with compliance rules (HIPAA, for example) need the right setup; some tools offer this only on team or enterprise plans.
+- **It usually does not** for everyday writing: emails, notes, chat. Cloud dictation is comparable to any other cloud tool you already use, and the convenience is worth it for most people.
+- **It matters a lot** for sensitive material: legal, medical, financial, or confidential business content. If audio of that leaving your device is a problem, you want on-device processing, or you keep that content off voice entirely.
+- **It matters for regulation.** Fields with compliance rules like HIPAA need the right setup. Some tools offer this only on team or enterprise plans, which is worth checking before you rely on one at work.
+
+## Questions to ask before you trust a tool
+
+You do not need to be a security expert to vet a dictation app. Ask a few plain questions:
+
+1. **Is the audio processed in the cloud or on-device?** If it is not stated clearly, assume cloud.
+2. **Is the audio stored, and for how long?** Look for "deleted after transcription" or a short retention window.
+3. **Is there a business or compliance tier?** For regulated work, an admin-controlled plan with the right agreements matters more than any single feature.
+4. **Can you delete your history?** A clear control to wipe past dictations is a good sign.
+
+For Wispr Flow specifically, we walk through the current privacy posture in [is Wispr Flow safe](/docs/review/is-wispr-flow-safe/), and whether it is a legitimate, well-run company in [is Wispr Flow legit](/docs/review/is-wispr-flow-legit/). Always confirm the live terms on the vendor's own site before trusting any tool with sensitive audio.
 
 ## How to choose
 
-1. **List what you will dictate.** If none of it is sensitive, cloud is fine and you get the best features.
-2. **If some is sensitive,** either keep that content off cloud dictation or choose an on-device tool for it.
-3. **On Linux or need offline?** On-device open-source tools are your path anyway.
+1. **List what you will dictate.** If none of it is sensitive, cloud is fine and you get the best accuracy and features.
+2. **If some is sensitive,** either keep that content off cloud dictation or choose an on-device tool for it. Many people run a fast cloud app for daily writing and reach for a local tool only for confidential work.
+3. **On Linux or need strictly offline?** Wispr Flow has [no native Linux app](/docs/use/linux/) today, so an on-device Whisper-based tool is your path there anyway.
 
 ## The honest bottom line
 
-Cloud dictation is not "unsafe"; it is a normal trade of some data flow for accuracy and polish. On-device dictation trades a little polish and convenience for keeping your voice on your machine. Pick based on what you actually dictate, not on fear. For the privacy specifics of the app we cover, see [is Wispr Flow safe](/docs/review/is-wispr-flow-safe/).
+For most people writing ordinary email, notes, and chat, a polished cloud dictation app is the practical choice, and the privacy trade is the same one you already make with cloud email and docs. If you handle confidential material, treat the audio step as the risk, keep sensitive content off cloud voice, or pick an on-device tool for that slice of your work.
+
+If you want to see how one mainstream cloud app handles all of this, our independent [Wispr Flow review](/docs/review/) covers accuracy, privacy, and where it is not the right fit.
+
+## FAQ
+
+**Is cloud dictation safe for work email?**
+For ordinary work email, yes, it is comparable to using cloud email itself. For confidential or regulated content, use an admin-controlled plan or keep that material off voice.
+
+**Does on-device dictation mean my words are fully private?**
+The audio stays local, which is the main win. The final text still lives in whatever app you dictate into, under that app's terms.
+
+**Which is more accurate, cloud or on-device?**
+Cloud tools are usually more accurate because they run larger models, but the gap has narrowed. For most prose, both are good enough.
+
+_Last reviewed: 22 September 2026._

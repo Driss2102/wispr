@@ -9,7 +9,7 @@ last_update:
   author: Driss Lahbil
 ---
 
-import { DisclosureNotice, PricingCTA, FAQAccordion, AlternativesTable } from '@site/src/components';
+import { DisclosureNotice, OfferBanner, FAQAccordion, AlternativesTable } from '@site/src/components';
 
 # Best Wispr Flow alternatives (2026)
 
@@ -26,6 +26,8 @@ Each row links to a dedicated, two-sided comparison. Find the one closest to you
 <AlternativesTable
   rows={[
     { name: 'Superwhisper', bestFor: 'On-device, offline dictation with model choice', tradeoff: 'No Android app; more setup', to: '/docs/compare/wispr-flow-vs-superwhisper/' },
+    { name: 'VoiceInk', bestFor: 'Local, private, subscription-free dictation on Mac', tradeoff: 'macOS only; more setup', to: '/docs/compare/wispr-flow-vs-voiceink/' },
+    { name: 'Speechify', bestFor: 'Reading text aloud plus dictation in one suite', tradeoff: 'Dictation is one feature; fewer languages', to: '/docs/compare/wispr-flow-vs-speechify/' },
     { name: 'Typeless', bestFor: 'A bigger free weekly word cap on desktop', tradeoff: 'Desktop only; fewer platforms', to: '/docs/compare/wispr-flow-vs-typeless/' },
     { name: 'Aqua Voice', bestFor: 'Benchmarked accuracy for technical users', tradeoff: 'No Android; fewer languages', to: '/docs/compare/wispr-flow-vs-aqua-voice/' },
     { name: 'Willow Voice', bestFor: 'A simple, no-frills dictation app', tradeoff: 'Narrower platform and feature set', to: '/docs/compare/wispr-flow-vs-willow-voice/' },
@@ -61,11 +63,12 @@ Free-tier limits and vendor claims change over time; confirm current details on 
   ]}
 />
 
-<PricingCTA
-  title="Leaning toward Wispr Flow?"
-  subtitle="If the all-round, cross-platform pick fits you best, the free plan is the easiest way to decide. No credit card."
+<OfferBanner
+  eyebrow="Wispr Flow free plan"
+  title="Leaning toward Wispr Flow? Try it free."
+  subtitle="A real, permanent free plan: dictate up to 2,000 words a week on desktop, and unlimited on Android. No credit card."
+  buttonText="Get Wispr Flow free"
   location="compare-pillar-cta"
-  riskReversal
 />
 
 ---

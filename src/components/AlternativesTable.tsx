@@ -24,6 +24,12 @@ export default function AlternativesTable({ rows }: { rows: AltRow[] }): React.R
     <div className="alt-table-wrap" tabIndex={0} role="region" aria-labelledby={captionId}>
       <span id={captionId} className="sr-only">Wispr Flow alternatives compared, with a link to each full comparison</span>
       <table className="alt-table">
+        <colgroup>
+          <col className="alt-c-name" />
+          <col className="alt-c-best" />
+          <col className="alt-c-trade" />
+          <col className="alt-c-cta" />
+        </colgroup>
         <thead>
           <tr>
             <th scope="col">Alternative</th>

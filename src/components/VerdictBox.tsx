@@ -20,6 +20,9 @@ interface VerdictBoxProps {
   ctaTo?: string;
   /** GA `cta_location` tag. Defaults to `verdict-box`. */
   location?: string;
+  /** Render the verdict/pros/cons with NO CTA button (e.g. when an OfferBanner
+   *  card supplies the CTA right after the box). */
+  noCta?: boolean;
 }
 
 /** The "verdict" block that closes a review or comparison page: rating, a
@@ -34,6 +37,7 @@ export default function VerdictBox({
   ctaHref = WISPR_AFFILIATE_URL,
   ctaTo,
   location = 'verdict-box',
+  noCta = false,
 }: VerdictBoxProps): React.ReactElement {
   return (
     <div className="verdict-box">
@@ -76,17 +80,24 @@ export default function VerdictBox({
         </div>
       )}
 
+      {!noCta && (
       <div className="verdict-box__cta">
         {ctaTo ? (
           <Link to={ctaTo} className="cta-link cta-link--button">
             {ctaText}
           </Link>
         ) : (
-          <AffiliateLink href={ctaHref} variant="button" location={location}>
-            {ctaText}
-          </AffiliateLink>
+          <>
+            <AffiliateLink href={ctaHref} variant="button" location={location}>
+              {ctaText}
+            </AffiliateLink>
+            <span className="verdict-box__reassurance">
+              Permanent free plan · No credit card
+            </span>
+          </>
         )}
       </div>
+      )}
     </div>
   );
 }

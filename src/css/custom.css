@@ -307,6 +307,54 @@
   font-size: 0.85rem;
   opacity: 0.75;
 }
+/* Trust-signal row under the CTA button: verified, risk-reducing reassurances. */
+.pricing-cta__trust {
+  width: 100%;
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  font-size: 0.85rem;
+}
+.pricing-cta--inline .pricing-cta__trust { justify-content: flex-end; }
+.pricing-cta--banner .pricing-cta__trust { justify-content: center; }
+.pricing-cta__trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+}
+.pricing-cta__trust-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--kg-pro) 16%, transparent);
+  color: var(--kg-pro);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+@media (max-width: 640px) {
+  .pricing-cta--inline .pricing-cta__trust { justify-content: flex-start; }
+}
+
+/* VerdictBox CTA reassurance line, beside/under the button. */
+.verdict-box__cta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.9rem;
+}
+.verdict-box__reassurance {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+}
 
 /* --------------------------------------------------------- Disclosure notice */
 .disclosure-notice {
@@ -1191,21 +1239,26 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 .alt-table-wrap {
   overflow-x: auto; margin: 1.75rem 0; border: 1px solid var(--kg-border); border-radius: 1rem;
 }
-.alt-table { width: 100%; border-collapse: collapse; min-width: 720px; font-size: 0.95rem; }
+.alt-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; table-layout: fixed; }
+.alt-table col.alt-c-name { width: 20%; }
+.alt-table col.alt-c-best { width: 33%; }
+.alt-table col.alt-c-trade { width: 27%; }
+.alt-table col.alt-c-cta { width: 20%; }
 .alt-table thead th {
   text-align: left; font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 600;
-  font-size: 0.82rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ifm-color-emphasis-700);
-  background: var(--kg-surface-alt); padding: 0.85rem 1.1rem; border-bottom: 1px solid var(--kg-border);
+  font-size: 0.74rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ifm-color-emphasis-700);
+  background: var(--kg-surface-alt); padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--kg-border);
 }
 .alt-table tbody th, .alt-table tbody td {
-  padding: 0.95rem 1.1rem; border-bottom: 1px solid var(--kg-border); vertical-align: middle; text-align: left;
+  padding: 0.7rem 0.8rem; border-bottom: 1px solid var(--kg-border); vertical-align: middle; text-align: left;
+  overflow-wrap: anywhere;
 }
 .alt-table tbody tr:last-child th, .alt-table tbody tr:last-child td { border-bottom: none; }
 .alt-table tbody tr { transition: background 0.15s ease; }
 .alt-table tbody tr:hover { background: color-mix(in srgb, var(--ifm-color-primary) 5%, transparent); }
 .alt-table__name {
-  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 700; font-size: 1.02rem;
-  color: var(--ifm-font-color-base); white-space: nowrap;
+  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 700; font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
 }
 .alt-table td { color: var(--ifm-color-emphasis-800); }
 .alt-table__tradeoff { color: var(--ifm-color-emphasis-600); }
@@ -1226,3 +1279,38 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 [data-theme='dark'] .alt-guide-btn:hover { color: #14141c; }
 .alt-guide-btn span[aria-hidden] { transition: transform 0.2s cubic-bezier(0.22,1,0.36,1); }
 .alt-guide-btn:hover span[aria-hidden] { transform: translateX(3px); }
+
+/* ===================== Offer banner (stylish free-plan CTA) ================ */
+.offer-banner {
+  display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap;
+  margin: 2rem 0; padding: 1.25rem 1.4rem; border-radius: 1rem;
+  background: var(--kg-surface); border: 1px solid var(--kg-border);
+  border-left: 4px solid var(--ifm-color-primary);
+  box-shadow: 0 14px 34px -22px rgba(15, 23, 42, 0.5);
+}
+.offer-banner__icon { flex: none; width: 56px; height: 56px; border-radius: 14px; object-fit: contain; }
+.offer-banner__body { flex: 1 1 260px; display: flex; flex-direction: column; gap: 0.1rem; }
+.offer-banner__eyebrow {
+  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 600; font-size: 0.76rem;
+  letter-spacing: 0.03em; text-transform: uppercase; color: var(--ifm-color-primary);
+}
+.offer-banner__title {
+  font-family: 'Space Grotesk', var(--ifm-heading-font-family); font-weight: 700; font-size: 1.22rem;
+  line-height: 1.18; letter-spacing: -0.01em; color: var(--ifm-heading-color);
+}
+.offer-banner__sub { color: var(--ifm-color-emphasis-700); font-size: 0.95rem; line-height: 1.45; margin-top: 0.25rem; }
+.offer-banner__btn { flex: none; white-space: nowrap; }
+@media (max-width: 640px) {
+  .offer-banner { align-items: flex-start; }
+  .offer-banner__btn { width: 100%; justify-content: center; }
+}
+
+/* alt-table: fits its column on desktop (no scroll); scrolls only on small screens */
+@media (max-width: 640px) {
+  .alt-table { table-layout: auto; min-width: 620px; }
+}
+
+/* ===================== Blog post conversion footer ======================== */
+.blog-post-cta { margin-top: 2.5rem; }
+/* Wider, more comfortable blog reading column now that the left sidebar is off. */
+.blog-wrapper .markdown, article .markdown { font-size: 1.02rem; }

@@ -2,6 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { SITE_ORIGIN, WISPR_AFFILIATE_URL } from './src/constants';
+import blogOfferBanner from './src/remark/blogOfferBanner.mjs';
 
 const config: Config = {
   title: 'Wispr Flow Guide',
@@ -41,8 +42,13 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'All posts',
+          // Sidebar shows only the latest few posts (not all), so it aids
+          // navigation without over-squeezing the reading column.
+          blogSidebarCount: 5,
+          blogSidebarTitle: 'Latest posts',
+          // Auto-insert the FTC disclosure + OfferBanner affiliate card into the
+          // middle of every blog post (current and future).
+          remarkPlugins: [blogOfferBanner],
           postsPerPage: 10,
           feedOptions: {
             type: ['rss', 'atom'],
