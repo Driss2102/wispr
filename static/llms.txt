@@ -36,6 +36,15 @@ Wispr Flow Guide helps people set up Wispr Flow on their devices and apps, decid
 - [Wispr Flow vs Otter.ai](https://wisprflowguide.com/docs/compare/wispr-flow-vs-otter/)
 - [Wispr Flow vs Apple Dictation](https://wisprflowguide.com/docs/compare/wispr-flow-vs-apple-dictation/)
 - [Wispr Flow vs OpenAI Whisper](https://wisprflowguide.com/docs/compare/wispr-flow-vs-openai-whisper/)
+- [Wispr Flow vs VoiceInk](https://wisprflowguide.com/docs/compare/wispr-flow-vs-voiceink/): cloud, cross-platform, subscription vs local, Mac-only, one-time purchase.
+- [Wispr Flow vs Speechify](https://wisprflowguide.com/docs/compare/wispr-flow-vs-speechify/): specialized dictation vs a broad voice suite that also reads text aloud.
+
+## Answers to common questions
+- [Does Wispr Flow work offline?](https://wisprflowguide.com/blog/does-wispr-flow-work-offline/): No, it processes speech in the cloud and needs an internet connection.
+- [Is there a Wispr Flow lifetime deal?](https://wisprflowguide.com/blog/wispr-flow-lifetime-deal/): No, Wispr Flow is subscription-only with a permanent free plan; there is no one-time lifetime license.
+- [What Reddit says about Wispr Flow](https://wisprflowguide.com/blog/wispr-flow-reddit-reviews/): recurring praise (auto-cleanup, cross-app) and criticism (free word cap, cloud-only, no Linux).
+- [Voice dictation on Linux](https://wisprflowguide.com/blog/voice-dictation-on-linux/): Wispr Flow has no Linux app; open-source local tools are the option there.
+- [Voice dictation statistics (sourced)](https://wisprflowguide.com/blog/voice-dictation-statistics/): typing averages ~52 wpm (Dhakal 2018); speech ~3x faster than phone typing (Ruan 2016).
 
 ## How-to guides
 - [How to use Wispr Flow](https://wisprflowguide.com/docs/guides/how-to-use-wispr-flow/)
